@@ -1,0 +1,194 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dedede;
+}
+
+nav {
+    margin: 0;
+    padding: 10px;
+    background-color: #606066;
+    /* background-color: #dca; */
+    /* background-color: #731; */
+    /* background-color: #04a14d; */
+}
+
+nav a {
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #9799a7;
+    border-right: 1px solid #bbb;
+    text-align: center;
+    display: block;
+    /* background-color: red; */
+}
+
+main {
+    display: block;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+nav a.active {
+    background-color: rgb(9, 9, 88);
+}
+
+/* section {
+    min-height: 30vh;
+} */
+
+
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    /* font-size: 32px; */
+}
+
+a {
+    color: #000;
+    /* text-decoration: none; */
+    font-family:Arial, sans-serif;
+}
+
+p {
+    font-size: 1.25em;
+    font-family:Arial, sans-serif;
+    text-align:left;
+}
+
+div.grid {
+    display: grid;
+    padding: 0.25%;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+div.item img {
+    width: 60%;
+    position: relative; /* added position to correctly center images horiwontally */
+    left: 20%;
+}
+
+div.carousel-caption p {
+    text-align: center; /* align text and also give caption another color */
+    color: #04a14d;
+}
+
+
+figcaption {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+figure {
+    /* width:150px;
+    height: 150px; */
+    border-style: solid;
+    border-width: 5px;
+    border-color: #04a14d;
+    padding: 3%;
+    background: #dca; /* light theme color */
+    background: #753; 
+    color: #731; /* light theme color */
+    color: #dcb;
+    border-radius: 2%;
+}
+
+figure img {
+    display:block;
+    margin:auto;
+    width:100%;
+}
+
+div.item {
+    margin: auto;
+    justify-items: center;
+}
+
+form {
+    background-color: #04a14d;
+    animation-name: quiztimer;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes quiztimer {
+    from {background-color: #04a14d;}
+    to {background-color: crimson;}
+}
+
+@media screen and (min-width : 772px) {
+    nav a {display: inline;}
+    div.grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    figure {
+        border-radius: 50%;
+        
+    }
+    figure img {
+        border-radius: 50%;
+    }
+    figure:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width : 998px) {
+    nav {
+        float: left;
+        left: 0;
+        height: 100vh;
+        width: 15em;
+        margin-right: 10px;
+    }
+    nav a {
+        display: block;
+        border: none;
+    }
+    figure {
+        border-radius: 0%;
+        
+    }
+    figure img {
+        border-radius: 0%;
+    }
+    figure:nth-child(3n) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+/* input[type=text] {
+    background-color: #04a14d;
+} */
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    height: 100%; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+} */
+
+/* li {
+    display: inline-block;
+}  */

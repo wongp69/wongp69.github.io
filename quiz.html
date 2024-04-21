@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design For Everybody Capstone Project Patrick Wong</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/quiz.js"></script>
+</head>
+<body>
+    <nav>
+        <!-- <ul>
+            <li><a class="active" href="#about">About</a></li>
+            <li><a href="#theory">Theory</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul> -->
+        <a href="index.html">About</a>
+        <a href="physics.html">Theory</a>
+        <a class="active" href="quiz.html">Quiz</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h1 id="top">Famous Atomic Physicists</h1>
+            <p>
+                In this section we will test your trivia knowledge about some famous phycisists.
+            </p>
+        </section>
+        <section id="quiz">
+            <p>
+                You get a randomly picked multiple choice question. Although not time limited the background will start to turn from green to red after 3 seconds. 
+                Try to answer each question before the background is completely red.
+            </p>
+            <form name="QuizQuestionForm" action="">
+                <div id="question">
+                    <input type="text" name="txtQNumber" size=11>
+                    <script>
+                        document.write(getQuestion());
+                    </script>
+                </div>
+                <input type="button" value="Check Question" name="buttonCheckQuestion" onclick="return buttonCheckQ_onclick()">
+            </form>
+        </section>
+        <br><br>
+    </main>
+    <footer>
+        <a href="#top">Jump to the Top</a>
+    </footer>
+</body>
+</html>
