@@ -44,12 +44,13 @@ nav a.active {
     min-height: 30vh;
 } */
 
+#aboutgallery {
+    text-align: center;
+}
 
-
-h1 {
+h1, h2 {
     text-align: center;
     font-family:Arial, sans-serif;
-    /* font-size: 32px; */
 }
 
 a {
@@ -146,6 +147,12 @@ form {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    h1, h2 {
+        text-align: left;
+    }
+    #aboutgallery {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width : 998px) {
@@ -170,6 +177,12 @@ form {
     figure:nth-child(3n) {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    #aboutgallery {
+        text-align: center;
     }
 }
 
