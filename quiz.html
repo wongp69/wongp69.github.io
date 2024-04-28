@@ -33,7 +33,8 @@
             </p>
             <form name="QuizQuestionForm" action="quiz.html">
                 <div id="question">
-                    <input type="text" name="txtQNumber" size=11>
+                    <label for="txtQNumber" class="visuallyhidden">qnum</label>
+                    <input type="text" name="txtQNumber" id="txtQNumber" size=11>
                     <script>
                         document.write(getQuestion());
                     </script>
