@@ -21,6 +21,7 @@ nav a {
     padding: 10px;
     text-decoration: none;
     color: #9799a7;
+    color: #fd0505;
     border-right: 1px solid #bbb;
     text-align: center;
     display: block;
@@ -185,6 +186,17 @@ form {
         text-align: center;
     }
 }
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 
 /* input[type=text] {
     background-color: #04a14d;
